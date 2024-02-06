@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from './Header.module.scss';
+import Link from 'next/link'
+import styles from './Header.module.css'
 
 export const Header = () => {
   return (
@@ -7,16 +7,16 @@ export const Header = () => {
       <nav>
         <ul className={styles.Header__list}>
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/store">Store</Link>
-          </li>
-          <li>
-            <Link href="/test">Test</Link>
+            <Link href="/store">
+              Store
+            </Link>
           </li>
         </ul>
       </nav>
-    </header>
-  );
-};
+    </header>)
+}

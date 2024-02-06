@@ -4,7 +4,7 @@ const path = require('path');
 const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/sass')],
-    prependData: `@import "main.scss";`,
+    prependData: `@import "main.sass"`,
   },
   images: {
     remotePatterns: [

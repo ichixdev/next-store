@@ -1,5 +1,7 @@
-import { Loader } from 'app/components/shared/Loader';
+import { Loader } from "app/components/shared/Loader"
 
-export default function loading() {
-  return <Loader />;
+export default function Loading() {
+  return (
+    <Loader />
+  )
 }

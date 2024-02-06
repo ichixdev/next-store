@@ -1,1 +1,1 @@
-export { MainProducts } from './MainProducts';
+export { MainProducts } from './MainProducts'

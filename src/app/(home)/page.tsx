@@ -1,9 +1,9 @@
-import { MainProducts } from 'app/components/home/MainProducts';
+import { MainProducts } from "app/components/home/MainProducts"
 
 export default function Home() {
   return (
     <main>
-      <MainProducts></MainProducts>
+      <MainProducts />
     </main>
-  );
+  )
 }
