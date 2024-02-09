@@ -1,11 +1,17 @@
-import Image from "next/image";
-import { ProductViewItemsOrder } from "./ProductViewItemsOrder";
-import styles from './ProductView.module.sass'
+import Image from 'next/image';
+import { ProductViewItemsOrder } from './ProductViewItemsOrder';
+import styles from './ProductView.module.sass';
+import { useRouter } from 'next/router';
 interface ProductViewProps {
-  product: ProductType
+  product: ProductType;
 }
 
 export const ProductView = ({ product }: ProductViewProps) => {
+  // const router = useRouter();
+
+  // if (!product) {
+  //   router.push('/');
+  // }
 
   return (
     <main className={styles.ProductView}>
@@ -31,5 +37,5 @@ export const ProductView = ({ product }: ProductViewProps) => {
         <ProductViewItemsOrder maxQuantity={product.quantity} />
       </section>
     </main>
-  )
+  );
 };
