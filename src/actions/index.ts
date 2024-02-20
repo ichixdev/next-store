@@ -15,7 +15,7 @@ export const handleCreateUser = async (formData: FormData) => {
       phone: '+58' + formDataObject.phone,
     },
   };
-  const { customerCreate } = await graphqlClient.request(
+  const { customerCreate }: any = await graphqlClient.request(
     createUserMutation,
     varialbles
   );
@@ -26,5 +26,16 @@ export const handleCreateUser = async (formData: FormData) => {
       formDataObject.password as string
     );
     redirect('/store');
+  }
+};
+
+export const hanldeLogin = async (formData: FormData) => {
+  const formDataObject = Object.fromEntries(formData);
+  const accessToken = await createAccessToken(
+    formDataObject.email as string,
+    formDataObject.password as string
+  );
+  if (accessToken) {
+    redirect('store');
   }
 };
