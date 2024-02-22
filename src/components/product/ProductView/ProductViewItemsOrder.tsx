@@ -23,6 +23,8 @@ export const ProductViewItemsOrder = ({
       price: product.price,
       quantity: counter,
       id: product.id,
+      image: product.image,
+      merchandiseId: product.gql_id,
     });
   };
 
