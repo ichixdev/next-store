@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "ANALIZE=true next build"
   },
   "dependencies": {
     "@google/generative-ai": "^0.2.1",
+    "@next/bundle-analyzer": "^14.1.2",
     "ai": "^2.2.36",
     "classnames": "^2.5.1",
     "graphql-request": "^6.1.0",

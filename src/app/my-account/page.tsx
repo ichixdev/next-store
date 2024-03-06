@@ -1,7 +1,9 @@
-export default function MyAccountPage() {
+import styles from './MyAccount.module.sass';
+
+export default async function MyAccountPage() {
   return (
     <div>
-      <h1>My Account</h1>
+      <h1 className={styles.MyAccount__title}>My Account</h1>
     </div>
   );
 }

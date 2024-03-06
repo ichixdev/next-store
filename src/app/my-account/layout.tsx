@@ -4,7 +4,7 @@ interface MyAccountLayoutProps {
   userInfo: React.ReactNode;
 }
 
-export default function MyAccountLayout(props: MyAccountLayoutProps) {
+export default async function MyAccountLayout(props: MyAccountLayoutProps) {
   return (
     <div>
       {props.children}
